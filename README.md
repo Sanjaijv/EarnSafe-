@@ -1,87 +1,168 @@
-💼 EarnSafe – AI-Powered Insurance for Gig Workers
-📌 Overview
+EarnSafe – AI-Powered Parametric Insurance for Gig Workers
+Overview
 
-EarnSafe is an AI-powered parametric insurance platform designed to protect gig economy delivery partners from income loss caused by external disruptions like weather, pollution, or curfews.
+EarnSafe is an insurance solution designed specifically for gig workers such as delivery partners. These workers frequently experience income loss due to external disruptions like heavy rain, extreme heat, pollution, and sudden curfews.
 
-Unlike traditional insurance, EarnSafe provides automatic claim triggering and instant payouts based on real-time data.
+The platform addresses this problem by automatically detecting such events and compensating workers for lost income without requiring manual claims or paperwork.
 
-🎯 Problem Statement
+Target Users
 
-Gig workers (Zomato, Swiggy, Amazon, etc.) often lose 20–30% of their income due to uncontrollable events.
-Currently, there is no protection system to compensate for this loss.
+EarnSafe is intended for:
 
-EarnSafe solves this by offering:
+Food delivery partners (Zomato, Swiggy)
 
-Weekly insurance plans
+E-commerce delivery agents (Amazon, Flipkart)
 
-AI-based risk analysis
+Grocery delivery workers (Zepto, Blinkit)
 
-Automated claims & payouts
+In general, it serves individuals whose income depends on daily work and is vulnerable to external conditions.
 
-🚀 Getting Started
-Run in Development
+Use Case Scenarios
+Scenario 1: Heavy Rain
 
-To start the application in development mode:
+A delivery partner starts their shift, but heavy rainfall disrupts operations. The system detects the weather condition, validates the worker’s location, and automatically processes compensation for income loss.
 
-npm run dev
+Scenario 2: Curfew or Restricted Zone
 
-The app will be available at:
+A worker is unable to operate due to a local curfew or restricted delivery zone. The system identifies the restriction and triggers a payout without requiring any manual action from the user.
 
-http://localhost:5173
-🏗️ Production Build
+Application Workflow
 
-To build the application:
+The user registers and creates a profile
 
-npm run build
-🔍 Preview Production Build
+The system generates a risk score
 
-To preview the build locally:
+A weekly premium is calculated
 
-npm run preview
-⚙️ Project Features
+Real-time monitoring of environmental and location data begins
 
-AI Risk Assessment: Dynamic weekly premium calculation based on location and risk.
+A disruption occurs (e.g., weather or zone restriction)
 
-Automated Claims: Real-time disruption detection with instant claim triggering.
+The system detects and validates the event
 
-Fraud Detection: Prevents fake claims using location and anomaly detection.
+The claim is triggered automatically
 
-Instant Payouts: Fast compensation using payment gateway simulation.
+Fraud detection checks are performed
 
-Dashboard: Insights for both workers and admins.
+The payout is processed
 
-👥 User Roles (Mock Data)
+The entire process is automated and requires no manual intervention.
 
-You can log in using different roles to explore features:
+Weekly Premium Model
 
-Worker: View insurance coverage, claims, and earnings protection.
+EarnSafe follows a weekly pricing model aligned with the earning cycle of gig workers.
 
-Admin: Monitor analytics, risks, and fraud detection.
+Premiums are determined based on:
 
-Insurer: Manage policies and payout processing.
+Location risk
 
-Note: This is a prototype. Data may be stored locally for simulation.
+Weather conditions
 
-🌩️ Disruptions Covered
+Historical disruption patterns
 
-Heavy rain / floods
+Worker activity
 
-Extreme heat
+This approach ensures that pricing remains flexible, fair, and affordable.
 
-Pollution
+Parametric Triggers
 
-Curfews / strikes
+Claims are triggered automatically when predefined conditions are met. These include:
 
-Only income loss is covered.
+Heavy rainfall exceeding a defined threshold
 
-🛠️ Tech Stack
+Extreme temperature conditions
 
-Frontend: React
+High pollution levels (AQI thresholds)
 
-Backend: Node.js / Python
+Curfews or restricted access zones
+
+Since the system is parametric, no manual claim filing is required.
+
+Platform Choice
+
+The system is implemented as a web application.
+
+This choice was made because:
+
+It allows faster development and deployment
+
+It is accessible across multiple devices
+
+It simplifies API integration
+
+It is suitable for rapid prototyping within a hackathon environment
+
+The platform can be extended to mobile applications in future iterations.
+
+AI/ML Integration
+
+EarnSafe incorporates AI and machine learning in multiple components:
+
+Premium Calculation
+
+A dynamic pricing model adjusts premiums based on risk factors such as location, historical disruptions, and environmental conditions.
+
+Fraud Detection
+
+Anomaly detection techniques are used to identify suspicious or duplicate claims and ensure system reliability.
+
+Risk Scoring
+
+Each user is assigned a risk profile to improve the accuracy and fairness of pricing.
+
+Tech Stack
+
+Frontend: React, Vite
+
+Backend: Node.js, Express
 
 Database: MongoDB
 
-AI/ML: Scikit-learn
+AI/ML: Python, Scikit-learn
 
-APIs: Weather API
+APIs: Weather API, Maps API
+
+Payments: Razorpay (test environment)
+
+Version Control: Git and GitHub
+
+Development Plan
+
+Phase 1: User interface and authentication
+Phase 2: Core functionality and automation
+Phase 3: AI integration (risk scoring, pricing, fraud detection)
+Phase 4: Testing, optimization, and dashboard development
+
+Key Features
+
+Fully automated claim processing
+
+Real-time disruption detection
+
+AI-based premium calculation
+
+Fraud detection mechanisms
+
+Instant payout simulation
+
+Impact
+
+EarnSafe aims to:
+
+Reduce claim processing time by over 90 percent
+
+Provide financial stability to gig workers
+
+Eliminate manual claim procedures
+
+Improve transparency and trust in insurance systems
+
+Future Work
+
+Mobile application development
+
+Integration with real-time data sources
+
+Expansion to multiple cities
+
+Advanced AI models for prediction and pricing
