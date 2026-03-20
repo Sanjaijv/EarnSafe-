@@ -1,168 +1,151 @@
-EarnSafe – AI-Powered Parametric Insurance for Gig Workers
-Overview
+# EarnSafe – AI-Powered Parametric Insurance for Gig Workers
 
+## Overview
 EarnSafe is an insurance solution designed specifically for gig workers such as delivery partners. These workers frequently experience income loss due to external disruptions like heavy rain, extreme heat, pollution, and sudden curfews.
 
-The platform addresses this problem by automatically detecting such events and compensating workers for lost income without requiring manual claims or paperwork.
+The platform addresses this problem by **automatically detecting events** and **compensating workers without manual claims or paperwork**.
 
-Target Users
+---
 
+## Target Users
 EarnSafe is intended for:
 
-Food delivery partners (Zomato, Swiggy)
-
-E-commerce delivery agents (Amazon, Flipkart)
-
-Grocery delivery workers (Zepto, Blinkit)
+- Food delivery partners (Zomato, Swiggy)  
+- E-commerce delivery agents (Amazon, Flipkart)  
+- Grocery delivery workers (Zepto, Blinkit)  
 
 In general, it serves individuals whose income depends on daily work and is vulnerable to external conditions.
 
-Use Case Scenarios
-Scenario 1: Heavy Rain
+---
 
-A delivery partner starts their shift, but heavy rainfall disrupts operations. The system detects the weather condition, validates the worker’s location, and automatically processes compensation for income loss.
+## Use Case Scenarios
 
-Scenario 2: Curfew or Restricted Zone
+### Scenario 1: Heavy Rain
+A delivery partner starts their shift, but heavy rainfall disrupts operations.  
+The system detects the weather condition, validates the worker’s location, and **automatically processes compensation** for income loss.
 
-A worker is unable to operate due to a local curfew or restricted delivery zone. The system identifies the restriction and triggers a payout without requiring any manual action from the user.
+### Scenario 2: Curfew or Restricted Zone
+A worker is unable to operate due to a local curfew or restricted delivery zone.  
+The system identifies the restriction and **triggers a payout without manual action**.
 
-Application Workflow
+---
 
-The user registers and creates a profile
+## Application Workflow
 
-The system generates a risk score
+1. User registers and creates a profile  
+2. System generates a risk score  
+3. Weekly premium is calculated  
+4. Real-time monitoring begins  
+5. Disruption occurs (weather / restriction)  
+6. System detects and validates the event  
+7. Claim is triggered automatically  
+8. Fraud detection checks are performed  
+9. Payout is processed  
 
-A weekly premium is calculated
+**Entire process is fully automated with no manual intervention.**
 
-Real-time monitoring of environmental and location data begins
+---
 
-A disruption occurs (e.g., weather or zone restriction)
-
-The system detects and validates the event
-
-The claim is triggered automatically
-
-Fraud detection checks are performed
-
-The payout is processed
-
-The entire process is automated and requires no manual intervention.
-
-Weekly Premium Model
-
-EarnSafe follows a weekly pricing model aligned with the earning cycle of gig workers.
+## Weekly Premium Model
+EarnSafe follows a **weekly pricing model** aligned with gig workers’ earning cycles.
 
 Premiums are determined based on:
+- Location risk  
+- Weather conditions  
+- Historical disruptions  
+- Worker activity  
 
-Location risk
+This ensures pricing is **flexible, fair, and affordable**.
 
-Weather conditions
+---
 
-Historical disruption patterns
+## Parametric Triggers
+Claims are triggered automatically when predefined conditions are met:
 
-Worker activity
+- Heavy rainfall exceeding threshold  
+- Extreme temperature conditions  
+- High pollution levels (AQI)  
+- Curfews or restricted zones  
 
-This approach ensures that pricing remains flexible, fair, and affordable.
+**No manual claim filing is required.**
 
-Parametric Triggers
+---
 
-Claims are triggered automatically when predefined conditions are met. These include:
+## Platform Choice
+The system is implemented as a **web application**.
 
-Heavy rainfall exceeding a defined threshold
+Reasons:
+- Faster development and deployment  
+- Accessible across devices  
+- Easy API integration  
+- Suitable for hackathon timelines  
 
-Extreme temperature conditions
+Future versions can extend to mobile applications.
 
-High pollution levels (AQI thresholds)
+---
 
-Curfews or restricted access zones
+## AI/ML Integration
 
-Since the system is parametric, no manual claim filing is required.
+### Premium Calculation
+Dynamic pricing based on:
+- Location  
+- Historical disruptions  
+- Environmental conditions  
 
-Platform Choice
+### Fraud Detection
+- Detects suspicious or duplicate claims  
+- Uses anomaly detection techniques  
 
-The system is implemented as a web application.
+### Risk Scoring
+- Assigns risk profiles  
+- Improves pricing accuracy  
 
-This choice was made because:
+---
 
-It allows faster development and deployment
+## Tech Stack
 
-It is accessible across multiple devices
+- **Frontend:** React, Vite  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB  
+- **AI/ML:** Python, Scikit-learn  
+- **APIs:** Weather API, Maps API  
+- **Payments:** Razorpay (test mode)  
+- **Version Control:** Git, GitHub  
 
-It simplifies API integration
+---
 
-It is suitable for rapid prototyping within a hackathon environment
+## Development Plan
 
-The platform can be extended to mobile applications in future iterations.
+- **Phase 1:** UI and authentication  
+- **Phase 2:** Core automation features  
+- **Phase 3:** AI integration  
+- **Phase 4:** Testing and optimization  
 
-AI/ML Integration
+---
 
-EarnSafe incorporates AI and machine learning in multiple components:
+## Key Features
 
-Premium Calculation
+- Fully automated claim processing  
+- Real-time disruption detection  
+- AI-based premium calculation  
+- Fraud detection mechanisms  
+- Instant payout simulation  
 
-A dynamic pricing model adjusts premiums based on risk factors such as location, historical disruptions, and environmental conditions.
+---
 
-Fraud Detection
+## Impact
 
-Anomaly detection techniques are used to identify suspicious or duplicate claims and ensure system reliability.
+EarnSafe helps:
+- Reduce claim processing time by **over 90%**  
+- Provide financial stability to gig workers  
+- Eliminate manual claim processes  
+- Improve transparency and trust  
 
-Risk Scoring
+---
 
-Each user is assigned a risk profile to improve the accuracy and fairness of pricing.
+## Future Work
 
-Tech Stack
-
-Frontend: React, Vite
-
-Backend: Node.js, Express
-
-Database: MongoDB
-
-AI/ML: Python, Scikit-learn
-
-APIs: Weather API, Maps API
-
-Payments: Razorpay (test environment)
-
-Version Control: Git and GitHub
-
-Development Plan
-
-Phase 1: User interface and authentication
-Phase 2: Core functionality and automation
-Phase 3: AI integration (risk scoring, pricing, fraud detection)
-Phase 4: Testing, optimization, and dashboard development
-
-Key Features
-
-Fully automated claim processing
-
-Real-time disruption detection
-
-AI-based premium calculation
-
-Fraud detection mechanisms
-
-Instant payout simulation
-
-Impact
-
-EarnSafe aims to:
-
-Reduce claim processing time by over 90 percent
-
-Provide financial stability to gig workers
-
-Eliminate manual claim procedures
-
-Improve transparency and trust in insurance systems
-
-Future Work
-
-Mobile application development
-
-Integration with real-time data sources
-
-Expansion to multiple cities
-
-Advanced AI models for prediction and pricing
+- Mobile application development  
+- Real-time data integration  
+- Multi-city expansion  
+- Advanced AI prediction models  
